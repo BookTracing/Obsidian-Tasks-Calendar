@@ -508,7 +508,8 @@ function getMonth(tasks, month) {
 				yearNr = moment(month).add(i, "days").format("YYYY");
 			};
 			var currentDate = moment(month).add(i, "days").format("YYYY-MM-DD");
-			if (!dailyNoteFolder) {var dailyNotePath = currentDate} else {var dailyNotePath = dailyNoteFolder+"/"+currentDate};
+			var currentDate1 = moment(month).add(i, "days").format("YYYY-MM-DD");
+			if (!dailyNoteFolder) {var dailyNotePath = currentDate1} else {var dailyNotePath = dailyNoteFolder+"/"+currentDate1};
 			var weekDay = moment(month).add(i, "days").format("d");
 			var shortDayName = moment(month).add(i, "days").format("D");
 			var longDayName = moment(month).add(i, "days").format("D. MMM");
